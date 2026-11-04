@@ -1,0 +1,628 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff5f2">
+
+    <title>For My Girlfriend ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- FLOATING PARTICLES -->
+    <div id="confettiContainer"></div>
+
+    <!-- 1. PASSWORD PAGE -->
+    <section class="password-screen" id="passwordScreen">
+
+        <div class="password-card">
+
+            <div class="lock-icon">♡</div>
+
+            <span class="eyebrow">A LITTLE SECRET FOR YOU</span>
+
+            <h1>Hello,<br><span>My Love!</span></h1>
+
+            <p>
+                There's something special waiting for you.
+                But first, enter our little secret.
+            </p>
+
+            <div class="password-input">
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="Enter the secret password"
+                    autocomplete="off"
+                >
+                <button id="togglePassword" type="button">♡</button>
+            </div>
+
+            <p id="passwordMessage" class="password-message"></p>
+
+            <button class="primary-button" id="loginButton">
+                Unlock My Surprise ♥
+            </button>
+
+            <span class="bottom-note">
+                Made with love, just for you.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN WEBSITE -->
+    <main id="mainContent" class="hidden">
+
+        <!-- 2. HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero-decoration">♡</div>
+
+            <div class="hero-content">
+
+                <span class="eyebrow">NOVEMBER 05, 2026</span>
+
+                <h1>
+                    Happy Birthday,<br>
+                    <span>My Love ♥</span>
+                </h1>
+
+                <p>
+                    Today is your day, my favorite person.
+                    I made something special just for you.
+                </p>
+
+                <a href="#gift" class="primary-button link-button">
+                    Let's Start Our Story ↓
+                </a>
+
+            </div>
+
+            <div class="hero-bottom">
+                SCROLL DOWN TO EXPLORE
+            </div>
+
+        </section>
+
+
+        <!-- 3. COUNTDOWN -->
+        <section class="countdown-section">
+
+            <span class="eyebrow">A SPECIAL DAY</span>
+
+            <h2>November 5th, 2026</h2>
+
+            <p>Every moment is special because it's yours.</p>
+
+            <div id="countdown" class="countdown">
+
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+
+            </div>
+
+            <p id="countdownMessage" class="countdown-message"></p>
+
+        </section>
+
+
+        <!-- 4. GIFT BOX -->
+        <section class="gift-section" id="gift">
+
+            <span class="eyebrow">A SPECIAL PRESENT</span>
+
+            <h2>Something For You</h2>
+
+            <p>
+                I have a little gift for you.
+                Come on, open it!
+            </p>
+
+            <div class="gift-area">
+
+                <div class="gift-box" id="giftBox">
+
+                    <div class="gift-lid"></div>
+
+                    <div class="gift-body"></div>
+
+                    <div class="gift-ribbon vertical"></div>
+
+                    <div class="gift-ribbon horizontal"></div>
+
+                    <div class="gift-bow">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+                <div class="gift-glow"></div>
+
+            </div>
+
+            <button class="primary-button" id="giftButton">
+                Open Your Gift 🎁
+            </button>
+
+            <p id="giftMessage" class="gift-message">
+                A little happiness is waiting inside. ♡
+            </p>
+
+        </section>
+
+
+        <!-- 5. BIRTHDAY CAKE -->
+        <section class="cake-section" id="cake">
+
+            <span class="eyebrow">MAKE A WISH</span>
+
+            <h2>A Cake Just For You</h2>
+
+            <p>
+                Close your eyes, make a wish,
+                and blow your candles.
+            </p>
+
+            <div class="cake-container">
+
+                <div class="flames" id="flames">
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candles">
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                </div>
+
+                <div class="cake-top"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-bottom"></div>
+                <div class="cake-plate"></div>
+
+            </div>
+
+            <button class="primary-button" id="blowButton">
+                Blow The Candles ✨
+            </button>
+
+            <p id="wishMessage" class="wish-message">
+                Make a beautiful wish, sayangkuu! ♡
+            </p>
+
+        </section>
+
+
+        <!-- 6. LOVE TIMELINE -->
+        <section class="timeline-section" id="timeline">
+
+    <span class="eyebrow">A STORY WRITTEN BY TWO HEARTS</span>
+
+    <h2>Our Little Love Story</h2>
+
+    <p class="section-description">
+        From a simple beginning to a thousand beautiful memories.
+        I'm grateful that our paths crossed. ♥
+    </p>
+
+    <div class="timeline">
+
+        <!-- MOMENT 1 -->
+        <div class="timeline-item left">
+
+            <div class="timeline-dot">♡</div>
+
+            <div class="timeline-card">
+
+                <span class="timeline-date">28 AUGUST 2023</span>
+
+                <h3>The Beginning of Us</h3>
+
+                <p>
+                    Hari di mana cerita kita dimulai.
+                    Mungkin saat itu kita belum tahu sejauh apa
+                    perjalanan ini akan membawa kita.
+                    Tapi siapa sangka, seseorang yang awalnya
+                    hadir sebagai bagian dari hari-hariku,
+                    perlahan menjadi seseorang yang sangat berarti.
+                </p>
+
+                <p>
+                    And I'm so glad that it was you. ♡
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOMENT 2 -->
+        <div class="timeline-item right">
+
+            <div class="timeline-dot">♡</div>
+
+            <div class="timeline-card">
+
+                <span class="timeline-date">A MEMORY TO REMEMBER</span>
+
+                <h3>Our First Ride Together</h3>
+
+                <p>
+                    Aku masih ingat momen pertama kali kita
+                    boncengan motor bersama.
+                    Ada satu hal sederhana yang sampai sekarang
+                    masih tersimpan di ingatanku.
+                </p>
+
+                <p>
+                    Saat kamu mulai memelukku dari belakang,
+                    rasanya ada kebahagiaan kecil yang sulit
+                    dijelaskan dengan kata-kata.
+                </p>
+
+                <p>
+                    Mungkin bagi orang lain itu hanya perjalanan
+                    biasa, tapi bagiku itu salah satu kenangan
+                    yang selalu ingin aku ingat.
+                </p>
+
+                <p>
+                    Sometimes, the smallest moments become
+                    our biggest memories. ♥
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOMENT 3 -->
+        <div class="timeline-item left">
+
+            <div class="timeline-dot">♡</div>
+
+            <div class="timeline-card">
+
+                <span class="timeline-date">EVERY LITTLE MOMENT</span>
+
+                <h3>Growing Together</h3>
+
+                <p>
+                    Selama perjalanan ini, kita sudah melewati
+                    banyak hal. Ada tawa, cerita, kebahagiaan,
+                    mungkin juga perbedaan dan hari-hari yang
+                    tidak selalu mudah.
+                </p>
+
+                <p>
+                    Tapi dari semua itu, aku belajar bahwa
+                    hubungan bukan hanya tentang menikmati
+                    hari yang indah, melainkan juga tentang
+                    saling memahami dan terus belajar bersama.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOMENT 4 -->
+        <div class="timeline-item right">
+
+            <div class="timeline-dot">♥</div>
+
+            <div class="timeline-card">
+
+                <span class="timeline-date">05 NOVEMBER 2026</span>
+
+                <h3>Your Special Day</h3>
+
+                <p>
+                    Hari ini adalah tentang kamu.
+                    Tentang seseorang yang sudah menjadi
+                    bagian penting dalam hidupku.
+                </p>
+
+                <p>
+                    Selamat ulang tahun, sayangkuu.
+                    Semoga semua hal baik selalu menemukan
+                    jalan untuk datang kepadamu.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOMENT 5 -->
+        <div class="timeline-item left">
+
+            <div class="timeline-dot">∞</div>
+
+            <div class="timeline-card">
+
+                <span class="timeline-date">OUR FUTURE</span>
+
+                <h3>There's More To Come</h3>
+
+                <p>
+                    Aku tahu perjalanan kita masih panjang.
+                    Masih banyak tempat yang belum kita kunjungi,
+                    cerita yang belum kita tulis, dan impian
+                    yang ingin kita wujudkan.
+                </p>
+
+                <p>
+                    Semoga kita selalu punya alasan untuk
+                    saling memilih, saling menjaga, dan
+                    menciptakan lebih banyak kenangan bersama.
+                </p>
+
+                <p>
+                    This is not the end of our story.
+                    It's just another beautiful chapter. ♥
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- 7. PHOTO GALLERY -->
+        <section class="gallery-section" id="gallery">
+
+            <span class="eyebrow">OUR LITTLE MEMORIES</span>
+
+            <h2>Beautiful Moments With You</h2>
+
+            <p>
+                Some moments deserve to be remembered forever.
+            </p>
+
+            <div class="gallery">
+
+                <div class="photo-card">
+                    <img src="assets/foto1.jpg" alt="❤️">
+                    <p>One of my favorite moments ♡</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/foto2.jpg" alt="❤️❤️">
+                    <p>Happiness looks like you.</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/foto3.jpg" alt="❤️">
+                    <p>More memories to come ♥</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8. LOVE LETTER -->
+        
+<!-- LOVE LETTER -->
+<section class="letter-section" id="letter">
+
+    <span class="eyebrow">A LETTER FROM MY HEART</span>
+
+    <h2>For My Beloved Sayangkuu</h2>
+
+    <p>
+        Some feelings are too special to be left unspoken.
+    </p>
+
+    <div class="envelope" id="envelope">
+
+        <div class="letter">
+
+            <div class="letter-content">
+
+                <span class="letter-heart">♥</span>
+
+                <h3>To My Dearest Sayangkuu,</h3>
+
+                <p>
+                    Happy Birthday, sayangkuu! ♡
+                </p>
+
+                <p>
+                    Selamat bertambah usia, perempuan yang
+                    begitu berarti dalam hidupku.
+                    Hari ini adalah hari spesial, hari ketika
+                    seseorang yang aku sayangi dilahirkan.
+                    Dan aku bersyukur karena dari sekian banyak
+                    orang di dunia ini, aku bisa mengenal kamu.
+                </p>
+
+                <p>
+                    Sayang, kalau aku mengingat perjalanan kita
+                    sejak 28 Agustus 2023, rasanya banyak sekali
+                    hal yang ingin aku ceritakan.
+                    Ada begitu banyak momen yang mungkin terlihat
+                    sederhana, tetapi punya tempat tersendiri
+                    di dalam hatiku.
+                </p>
+
+                <p>
+                    Aku masih ingat saat pertama kali kita
+                    boncengan motor bersama.
+                    Saat kamu mulai memelukku dari belakang,
+                    ada perasaan bahagia yang sulit aku jelaskan.
+                    Sederhana memang, tetapi sampai sekarang
+                    kenangan itu masih menjadi salah satu
+                    momen yang paling aku ingat.
+                </p>
+
+                <p>
+                    Dari perjalanan kecil itu, sampai berbagai
+                    cerita yang sudah kita lewati bersama,
+                    aku semakin sadar bahwa kebahagiaan
+                    terkadang bukan tentang hal-hal besar.
+                    Terkadang cukup dengan kehadiran seseorang
+                    yang kita sayangi.
+                </p>
+
+                <p>
+                    Terima kasih sudah menjadi bagian dari
+                    hidupku. Terima kasih untuk setiap perhatian,
+                    waktu, tawa, pelukan, cerita, dan semua
+                    hal kecil yang mungkin tidak selalu
+                    sempat aku ucapkan.
+                </p>
+
+                <p>
+                    Aku tahu kita bukan pasangan yang sempurna.
+                    Mungkin ada hari ketika kita berbeda pendapat,
+                    ada saat ketika kita saling tidak memahami,
+                    dan ada perjalanan yang terasa melelahkan.
+                    Tetapi aku berharap kita tidak pernah
+                    berhenti belajar untuk saling mengerti.
+                </p>
+
+                <p>
+                    Di umurmu yang baru ini, aku berdoa semoga
+                    kamu selalu diberikan kesehatan, kebahagiaan,
+                    umur yang penuh berkah, rezeki yang lancar,
+                    dan kemudahan dalam setiap langkahmu.
+                    Semoga semua impian yang selama ini kamu
+                    perjuangkan satu per satu bisa menjadi nyata.
+                </p>
+
+                <p>
+                    Kalau suatu hari kamu merasa lelah,
+                    jangan merasa harus menghadapi semuanya
+                    sendirian. Aku ingin menjadi seseorang
+                    yang bisa kamu ajak bercerita, tempat
+                    kamu berbagi keluh kesah, dan seseorang
+                    yang selalu mendukung setiap langkah baikmu.
+                </p>
+
+                <p>
+                    Aku tidak tahu bagaimana perjalanan kita
+                    ke depannya, tetapi aku berharap masih
+                    ada banyak tanggal 28 Agustus yang bisa
+                    kita rayakan, banyak perjalanan yang bisa
+                    kita lalui, dan banyak kenangan yang
+                    bisa kita simpan bersama.
+                </p>
+
+                <p>
+                    Terakhir, jangan pernah merasa bahwa
+                    dirimu tidak berharga. Kamu adalah seseorang
+                    yang istimewa, dan aku harap kamu selalu
+                    punya alasan untuk tersenyum.
+                </p>
+
+                <p>
+                    Happy Birthday, my favorite person.
+                    Terima kasih sudah hadir dan menjadi
+                    bagian dari cerita hidupku.
+                </p>
+
+                <p>
+                    I love you, more than words can explain.
+                    Today, tomorrow, and in every chapter
+                    of our story. ♥
+                </p>
+
+                <p class="signature">
+                    With all my love,<br>
+                    Your favorite person. ♡
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="envelope-flap"></div>
+
+    </div>
+
+    <button class="primary-button" id="letterButton">
+        Open Your Letter 💌
+    </button>
+
+</section>
+
+
+
+        <!-- 9. FINAL -->
+        <section class="final-section">
+
+            <div class="final-heart">♥</div>
+
+            <span class="eyebrow">ALWAYS AND FOREVER</span>
+
+            <h2>
+                I'm So Lucky<br>
+                To Have You.
+            </h2>
+
+            <p>
+                May your life be filled with beautiful things,
+                endless happiness, and all the love you deserve.
+            </p>
+
+            <h3>Happy Birthday, Sayangkuu! ♡</h3>
+
+            <div class="final-decoration">
+                Made with love, just for you.
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MUSIC CONTROL -->
+    <button
+        id="musicButton"
+        class="music-button hidden"
+        aria-label="Putar atau jeda musik"
+    >
+        ♫
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
